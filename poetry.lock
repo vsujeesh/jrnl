@@ -551,17 +551,6 @@ python-dateutil = ">=2.8.1"
 dev = ["flake8", "markdown", "twine", "wheel"]
 
 [[package]]
-name = "glob2"
-version = "0.7"
-description = "Version of the glob module that can capture patterns and supports recursive wildcards"
-category = "dev"
-optional = false
-python-versions = "*"
-files = [
-    {file = "glob2-0.7.tar.gz", hash = "sha256:85c3dbd07c8aa26d63d7aacee34fa86e9a91a3873bc30bf62ec46e531f92ab8c"},
-]
-
-[[package]]
 name = "idna"
 version = "3.3"
 description = "Internationalized Domain Names in Applications (IDNA)"
@@ -1249,23 +1238,22 @@ testing = ["argcomplete", "hypothesis (>=3.56)", "mock", "nose", "pygments (>=2.
 
 [[package]]
 name = "pytest-bdd"
-version = "5.0.0"
+version = "6.1.1"
 description = "BDD for pytest"
 category = "dev"
 optional = false
-python-versions = ">=3.6"
+python-versions = ">=3.7,<4.0"
 files = [
-    {file = "pytest-bdd-5.0.0.tar.gz", hash = "sha256:fab7093ed3d5e51ee0c68de093c90e4f40de345bd9a54a188b2991ce2a2a39cf"},
-    {file = "pytest_bdd-5.0.0-py3-none-any.whl", hash = "sha256:c7cf12209606421f61f36b5dc63beccd0c82d29446c0592cf68af2dad0a9761d"},
+    {file = "pytest_bdd-6.1.1-py3-none-any.whl", hash = "sha256:57eba5878d77036f356a85fb1d108cb061d8af4fb4d032b1a424fa9abe9e498b"},
+    {file = "pytest_bdd-6.1.1.tar.gz", hash = "sha256:138af3592bcce5d4684b0d690777cf199b39ce45d423ca28086047ffe6111010"},
 ]
 
 [package.dependencies]
-glob2 = "*"
 Mako = "*"
 parse = "*"
 parse-type = "*"
-py = "*"
-pytest = ">=4.3"
+pytest = ">=6.2.0"
+typing-extensions = "*"
 
 [[package]]
 name = "pytest-clarity"
@@ -1683,6 +1671,18 @@ files = [
 test = ["pre-commit", "pytest"]
 
 [[package]]
+name = "typing-extensions"
+version = "4.4.0"
+description = "Backported and Experimental Type Hints for Python 3.7+"
+category = "dev"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "typing_extensions-4.4.0-py3-none-any.whl", hash = "sha256:16fa4864408f655d35ec496218b85f79b3437c829e93320c7c9215ccfd92489e"},
+    {file = "typing_extensions-4.4.0.tar.gz", hash = "sha256:1511434bb92bf8dd198c12b1cc812e800d4181cfcb867674e0f8279cc93087aa"},
+]
+
+[[package]]
 name = "tzdata"
 version = "2022.1"
 description = "Provider of IANA time zone data"
@@ -1833,4 +1833,4 @@ testing = ["func-timeout", "jaraco.itertools", "pytest (>=6)", "pytest-black (>=
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10.0, <3.13"
-content-hash = "6b1481f2e3dddb80ce48ed4d7eee5c10bee04a0997ca36c4eefc0918afb1eb94"
+content-hash = "3a9811b6baea1c51e4712a50de8204c964fb70c43dae0fec49ff355ce9d6c71b"
